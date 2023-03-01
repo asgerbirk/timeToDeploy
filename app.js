@@ -30,11 +30,7 @@ app.get("/api/teams", (req, res) => {
     res.send({data: teams})
 })
 
-
-
-
 const PORT = 8080;
-
 
 app.listen(PORT, (error) => {
     if (error) {
