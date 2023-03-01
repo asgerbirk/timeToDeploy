@@ -1,12 +1,6 @@
-import {application, json} from "express";
 
 
-fetch("/api/teams"), {
-    method: "GET",
-    headers:{
-        "Content-type": "application/json()"
-    },
-}
+fetch(`/api/teams`)
     .then(response => response.json())
     .then(result => {
         const teamWrapperDiv = document.getElementById("teams")
