@@ -18,33 +18,6 @@ fetch("api/teams")
         })
     })
 
-const teamSelect1 = document.querySelector('#teamSelect1');
-
-fetch("api/teams")
-    .then(respone => respone.json())
-    .then(result => {
-        result.data.forEach(team => {
-            const option = document.createElement('option');
-            option.text = team.name;
-            option.value = team.id;
-            teamSelect1.add(option);
-        });
-    });
-
-const teamSelect2 = document.querySelector('#teamSelect2');
-
-fetch("api/teams")
-    .then(respone => respone.json())
-    .then(result => {
-        result.data.forEach(team => {
-            const option = document.createElement('option');
-            option.text = team.name;
-            option.value = team.id;
-            teamSelect2.add(option);
-        });
-    });
-
-
 const countDownDiv = document.getElementById("countdown")
 
 const countDown = () => {
