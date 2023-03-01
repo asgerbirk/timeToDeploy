@@ -1,4 +1,4 @@
-fetch("/api/teams")
+fetch("api/teams")
     .then(response => response.json())
     .then(result => {
         const teamWrapperDiv = document.getElementById("teams")
