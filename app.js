@@ -30,9 +30,7 @@ app.get("/api/teams", (req, res) => {
     res.send({data: teams})
 })
 
-app.post("/api/teams", (req, res) => {
 
-})
 
 
 const PORT = 8080;
