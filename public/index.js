@@ -1,5 +1,3 @@
-
-
 fetch(`/api/teams`)
     .then(response => response.json())
     .then(result => {
