@@ -1,4 +1,4 @@
-fetch(`/api/teams`)
+fetch("localhost:8080/api/teams")
     .then(response => response.json())
     .then(result => {
         const teamWrapperDiv = document.getElementById("teams")
